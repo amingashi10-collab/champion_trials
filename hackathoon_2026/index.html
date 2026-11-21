@@ -1,155 +1,190 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alex Morgan | Portfolio</title>
-  <meta name="description" content="Personal portfolio of Alex Morgan, front-end developer and designer.">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex | My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ===== NAVIGATION ===== -->
-  <header class="site-header">
-    <nav class="navbar" aria-label="Main navigation">
-      <a href="#home" class="logo">alex<span>.dev</span></a>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Port<span>folio.</span></h2>
 
-      <!-- Mobile menu toggle (pure CSS, no JavaScript) -->
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
-      <label for="nav-toggle" class="burger" aria-hidden="true">
-        <span></span><span></span><span></span>
-      </label>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-      <ul class="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
+    <!-- HOME -->
+    <section class="home" id="home">
 
-        <!-- Dropdown -->
-        <li class="dropdown">
-          <a href="#projects" class="dropdown-toggle" aria-haspopup="true">Projects <span class="caret"></span></a>
-          <ul class="submenu">
-            <li><a href="#project-weather">Weather App</a></li>
-            <li><a href="#project-brand">Brand Kit</a></li>
-            <li><a href="#project-shop">Online Shop</a></li>
-          </ul>
-        </li>
+        <div class="home-content">
+            <h3>Hello, I'm</h3>
+            <h1>Alex</h1>
+            <h2>Frontend Developer</h2>
 
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact" class="btn-nav">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+            <p>
+                Welcome to my personal portfolio website.
+                I create modern, creative and responsive
+                websites using HTML and CSS.
+            </p>
 
-  <main>
-
-    <!-- ===== HERO ===== -->
-    <section id="home" class="hero">
-      <div class="blob blob-1"></div>
-      <div class="blob blob-2"></div>
-      <div class="blob blob-3"></div>
-
-      <div class="hero-text">
-        <p class="hello">Hi, I'm</p>
-        <h1>Alex Morgan</h1>
-        <h2><span class="typing">Front-End Developer</span></h2>
-        <p class="lead">I design and build smooth, accessible websites that feel alive. Welcome to my corner of the internet.</p>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">View my work</a>
-          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+            <a href="#about" class="btn">Explore More</a>
         </div>
-      </div>
 
-      <div class="hero-image">
-        <div class="ring"></div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgNDAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzdjNWNmZiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwMGQ0ZmYiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InNoaXJ0IiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzJhMmQ1YyIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxNzE5MzYiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8Y2xpcFBhdGggaWQ9ImNpcmNsZSI+PGNpcmNsZSBjeD0iMjAwIiBjeT0iMjAwIiByPSIyMDAiLz48L2NsaXBQYXRoPgogIDwvZGVmcz4KICA8ZyBjbGlwLXBhdGg9InVybCgjY2lyY2xlKSI+CiAgICA8cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0idXJsKCNiZykiLz4KICAgIDxjaXJjbGUgY3g9IjgwIiBjeT0iOTAiIHI9IjUwIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTIiLz4KICAgIDxjaXJjbGUgY3g9IjM0MCIgY3k9IjMyMCIgcj0iNzAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii4xMCIvPgogICAgPGNpcmNsZSBjeD0iMzMwIiBjeT0iODAiIHI9IjE4IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTgiLz4KICAgIDwhLS0gc2hvdWxkZXJzIC0tPgogICAgPHBhdGggZD0iTTQwIDQwMCBDNTAgMzIwIDEyMCAyODUgMjAwIDI4NSBDMjgwIDI4NSAzNTAgMzIwIDM2MCA0MDAgWiIgZmlsbD0idXJsKCNzaGlydCkiLz4KICAgIDwhLS0gbmVjayAtLT4KICAgIDxyZWN0IHg9IjE3MyIgeT0iMjQwIiB3aWR0aD0iNTQiIGhlaWdodD0iNTUiIHJ4PSIxOCIgZmlsbD0iI2U4YjQ4ZiIvPgogICAgPCEtLSBjb2xsYXIgLS0+CiAgICA8cGF0aCBkPSJNMTY1IDI5MCBMMjAwIDMzMCBMMjM1IDI5MCBMMjIyIDI4MiBMMjAwIDMwNSBMMTc4IDI4MiBaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuOSIvPgogICAgPCEtLSBoZWFkIC0tPgogICAgPGVsbGlwc2UgY3g9IjIwMCIgY3k9IjE4MCIgcng9IjY4IiByeT0iNzgiIGZpbGw9IiNmMmM0YTAiLz4KICAgIDwhLS0gZWFycyAtLT4KICAgIDxlbGxpcHNlIGN4PSIxMzIiIGN5PSIxODgiIHJ4PSIxMCIgcnk9IjE2IiBmaWxsPSIjZThiNDhmIi8+CiAgICA8ZWxsaXBzZSBjeD0iMjY4IiBjeT0iMTg4IiByeD0iMTAiIHJ5PSIxNiIgZmlsbD0iI2U4YjQ4ZiIvPgogICAgPCEtLSBoYWlyIC0tPgogICAgPHBhdGggZD0iTTEzMCAxNzAgQzEyMiAxMDAgMTcwIDcyIDIwOCA3OCBDMjUyIDg0IDI4MiAxMTggMjcwIDE3MiBDMjYyIDE0OCAyNDYgMTI4IDIyNCAxMjIgQzE5MCAxMzIgMTYwIDEzOCAxMzAgMTcwIFoiIGZpbGw9IiMyYjIxNDAiLz4KICAgIDwhLS0gZXllcyAtLT4KICAgIDxlbGxpcHNlIGN4PSIxNzQiIGN5PSIxODgiIHJ4PSI3IiByeT0iOSIgZmlsbD0iIzFhMTUzMCIvPgogICAgPGVsbGlwc2UgY3g9IjIyNiIgY3k9IjE4OCIgcng9IjciIHJ5PSI5IiBmaWxsPSIjMWExNTMwIi8+CiAgICA8Y2lyY2xlIGN4PSIxNzYiIGN5PSIxODUiIHI9IjIuNSIgZmlsbD0iI2ZmZiIvPgogICAgPGNpcmNsZSBjeD0iMjI4IiBjeT0iMTg1IiByPSIyLjUiIGZpbGw9IiNmZmYiLz4KICAgIDwhLS0gYnJvd3MgLS0+CiAgICA8cGF0aCBkPSJNMTYwIDE2OCBRMTc0IDE2MCAxODggMTY3IiBzdHJva2U9IiMyYjIxNDAiIHN0cm9rZS13aWR0aD0iNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgICA8cGF0aCBkPSJNMjEyIDE2NyBRMjI2IDE2MCAyNDAgMTY4IiBzdHJva2U9IiMyYjIxNDAiIHN0cm9rZS13aWR0aD0iNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgICA8IS0tIHNtaWxlIC0tPgogICAgPHBhdGggZD0iTTE3NiAyMjQgUTIwMCAyNDYgMjI0IDIyNCIgc3Ryb2tlPSIjYjU2NTRhIiBzdHJva2Utd2lkdGg9IjUiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogICAgPCEtLSBnbGFzc2VzIC0tPgogICAgPGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMGUwZjFmIiBzdHJva2Utd2lkdGg9IjQiPgogICAgICA8cmVjdCB4PSIxNTAiIHk9IjE3MCIgd2lkdGg9IjQ2IiBoZWlnaHQ9IjM2IiByeD0iMTQiLz4KICAgICAgPHJlY3QgeD0iMjA0IiB5PSIxNzAiIHdpZHRoPSI0NiIgaGVpZ2h0PSIzNiIgcng9IjE0Ii8+CiAgICAgIDxwYXRoIGQ9Ik0xOTYgMTg2IEgyMDQiLz4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPgo=" alt="Illustrated portrait of Alex Morgan" width="360" height="360">
-      </div>
-
-      <a href="#about" class="scroll-down" aria-label="Scroll to About section"><span></span></a>
-    </section>
-
-    <!-- ===== ABOUT ===== -->
-    <section id="about" class="section">
-      <h2 class="section-title reveal">About me</h2>
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <p>I'm a front-end developer who loves turning ideas into interactive experiences. I care about clean code, thoughtful design and the small details, like a button that eases in just right.</p>
-          <p>When I'm not coding, you'll find me sketching ideas, exploring new CSS features, or hiking with a camera.</p>
-          <ul class="facts">
-            <li><strong>5+</strong><span>Years experience</span></li>
-            <li><strong>40+</strong><span>Projects shipped</span></li>
-            <li><strong>12</strong><span>Happy clients</span></li>
-          </ul>
+        <div class="circle">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>WEB</span>
         </div>
-      </div>
+
     </section>
 
-    <!-- ===== PROJECTS ===== -->
-    <section id="projects" class="section">
-      <h2 class="section-title reveal">Projects</h2>
-      <div class="cards">
+    <!-- ABOUT -->
+    <section class="about" id="about">
 
-        <article class="card reveal" id="project-weather">
-          <div class="card-img">
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNDAwIiB3aWR0aD0iNjQwIiBoZWlnaHQ9IjQwMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InNreSIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMzYTdiZmYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2M1Y2ZmIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJzdW4iIGN4PSIuNSIgY3k9Ii41IiByPSIuNSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZmZjZhOCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmI5MzgiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSI2NDAiIGhlaWdodD0iNDAwIiBmaWxsPSJ1cmwoI3NreSkiLz4KICA8IS0tIHN1biBnbG93IC0tPgogIDxjaXJjbGUgY3g9IjQ3MCIgY3k9IjEzMCIgcj0iMTEwIiBmaWxsPSIjZmZkOTY2IiBvcGFjaXR5PSIuMiIvPgogIDxjaXJjbGUgY3g9IjQ3MCIgY3k9IjEzMCIgcj0iNzAiIGZpbGw9InVybCgjc3VuKSIvPgogIDwhLS0gY2xvdWRzIC0tPgogIDxnIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii45NSI+CiAgICA8ZWxsaXBzZSBjeD0iMzgwIiBjeT0iMTcwIiByeD0iNzAiIHJ5PSIzMCIvPgogICAgPGVsbGlwc2UgY3g9IjM0MCIgY3k9IjE2MCIgcng9IjM4IiByeT0iMzAiLz4KICAgIDxlbGxpcHNlIGN4PSI0MTAiIGN5PSIxNTIiIHJ4PSI0NCIgcnk9IjM0Ii8+CiAgPC9nPgogIDxnIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii41NSI+CiAgICA8ZWxsaXBzZSBjeD0iMTUwIiBjeT0iOTUiIHJ4PSI1NSIgcnk9IjIwIi8+CiAgICA8ZWxsaXBzZSBjeD0iMTIwIiBjeT0iODgiIHJ4PSIyOCIgcnk9IjIwIi8+CiAgICA8ZWxsaXBzZSBjeD0iMTgwIiBjeT0iODIiIHJ4PSIzMCIgcnk9IjIyIi8+CiAgPC9nPgogIDwhLS0gdGVtcGVyYXR1cmUgLS0+CiAgPHRleHQgeD0iNDgiIHk9IjIxNSIgZm9udC1mYW1pbHk9IlNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI5MiIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2ZmZiI+MjTCsDwvdGV4dD4KICA8dGV4dCB4PSI1MiIgeT0iMjUwIiBmb250LWZhbWlseT0iU2Vnb2UgVUksIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuODUiPlN1bm55IMK3IEJ1ZGFwZXN0PC90ZXh0PgogIDwhLS0gZm9yZWNhc3QgcGFuZWwgLS0+CiAgPHJlY3QgeD0iNDAiIHk9IjI4MCIgd2lkdGg9IjU2MCIgaGVpZ2h0PSI5MCIgcng9IjIwIiBmaWxsPSIjMGUwZjFmIiBvcGFjaXR5PSIuMzUiLz4KICA8ZyBmb250LWZhbWlseT0iU2Vnb2UgVUksIEFyaWFsLCBzYW5zLXNlcmlmIiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE2Ij4KICAgIDx0ZXh0IHg9IjEwNSIgeT0iMzA4IiBvcGFjaXR5PSIuOCI+TW9uPC90ZXh0PjxjaXJjbGUgY3g9IjEwNSIgY3k9IjMzMSIgcj0iMTIiIGZpbGw9IiNmZmQ5NjYiLz48dGV4dCB4PSIxMDUiIHk9IjM2MSI+MjPCsDwvdGV4dD4KICAgIDx0ZXh0IHg9IjIxNSIgeT0iMzA4IiBvcGFjaXR5PSIuOCI+VHVlPC90ZXh0PjxlbGxpcHNlIGN4PSIyMTUiIGN5PSIzMzIiIHJ4PSIxNiIgcnk9IjkiIGZpbGw9IiNmZmYiLz48dGV4dCB4PSIyMTUiIHk9IjM2MSI+MjDCsDwvdGV4dD4KICAgIDx0ZXh0IHg9IjMyNSIgeT0iMzA4IiBvcGFjaXR5PSIuOCI+V2VkPC90ZXh0PjxlbGxpcHNlIGN4PSIzMjUiIGN5PSIzMzIiIHJ4PSIxNiIgcnk9IjkiIGZpbGw9IiNjZmQ2ZmYiLz48dGV4dCB4PSIzMjUiIHk9IjM2MSI+MTfCsDwvdGV4dD4KICAgIDx0ZXh0IHg9IjQzNSIgeT0iMzA4IiBvcGFjaXR5PSIuOCI+VGh1PC90ZXh0PjxjaXJjbGUgY3g9IjQzNSIgY3k9IjMzMSIgcj0iMTIiIGZpbGw9IiNmZmQ5NjYiLz48dGV4dCB4PSI0MzUiIHk9IjM2MSI+MjLCsDwvdGV4dD4KICAgIDx0ZXh0IHg9IjU0NSIgeT0iMzA4IiBvcGFjaXR5PSIuOCI+RnJpPC90ZXh0PjxjaXJjbGUgY3g9IjU0NSIgY3k9IjMzMSIgcj0iMTIiIGZpbGw9IiNmZmQ5NjYiLz48dGV4dCB4PSI1NDUiIHk9IjM2MSI+MjXCsDwvdGV4dD4KICA8L2c+Cjwvc3ZnPgo=" alt="Weather app interface with sun and clouds" loading="lazy">
-          </div>
-          <div class="card-body">
-            <h3>Weather App</h3>
-            <p>A clean forecast dashboard with animated icons and a seven-day outlook.</p>
-            <div class="tags"><span>HTML</span><span>CSS</span><span>API</span></div>
-          </div>
-        </article>
+        <h2 class="heading">About <span>Me</span></h2>
 
-        <article class="card reveal" id="project-brand">
-          <div class="card-img">
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNDAwIiB3aWR0aD0iNjQwIiBoZWlnaHQ9IjQwMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxvZ28iIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmY1Y2E4Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmYjkzOCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjY0MCIgaGVpZ2h0PSI0MDAiIGZpbGw9IiNmZGY2ZWYiLz4KICA8IS0tIGRlY29yYXRpdmUgc2hhcGVzIC0tPgogIDxjaXJjbGUgY3g9IjU3MCIgY3k9IjUwIiByPSI5MCIgZmlsbD0iI2ZmZDhlOCIvPgogIDxjaXJjbGUgY3g9IjYwIiBjeT0iMzYwIiByPSI3MCIgZmlsbD0iI2Q5ZjNmZiIvPgogIDwhLS0gbG9nbyBtYXJrIC0tPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYwIDYwKSI+CiAgICA8cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgcng9IjM2IiBmaWxsPSJ1cmwoI2xvZ28pIi8+CiAgICA8Y2lyY2xlIGN4PSI3MCIgY3k9IjcwIiByPSIzNCIgZmlsbD0iI2ZmZiIvPgogICAgPGNpcmNsZSBjeD0iNzAiIGN5PSI3MCIgcj0iMTYiIGZpbGw9IiNmZjVjYTgiLz4KICAgIDxyZWN0IHg9Ijk2IiB5PSIyMiIgd2lkdGg9IjIyIiBoZWlnaHQ9IjIyIiByeD0iNiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjciLz4KICA8L2c+CiAgPCEtLSB3b3JkbWFyayAtLT4KICA8dGV4dCB4PSIyMjUiIHk9IjEyNSIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsIHNlcmlmIiBmb250LXNpemU9IjU0IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMmIyMTQwIj5CbG9vbSZhbXA7Q288L3RleHQ+CiAgPHRleHQgeD0iMjI4IiB5PSIxNTgiIGZvbnQtZmFtaWx5PSJTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGxldHRlci1zcGFjaW5nPSI2IiBmaWxsPSIjOGE3ZjljIj5CUkFORCBJREVOVElUWTwvdGV4dD4KICA8IS0tIGNvbG91ciBzd2F0Y2hlcyAtLT4KICA8Zz4KICAgIDxyZWN0IHg9IjYwIiAgeT0iMjQwIiB3aWR0aD0iOTAiIGhlaWdodD0iOTAiIHJ4PSIyMCIgZmlsbD0iI2ZmNWNhOCIvPgogICAgPHJlY3QgeD0iMTY1IiB5PSIyNDAiIHdpZHRoPSI5MCIgaGVpZ2h0PSI5MCIgcng9IjIwIiBmaWxsPSIjZmZiOTM4Ii8+CiAgICA8cmVjdCB4PSIyNzAiIHk9IjI0MCIgd2lkdGg9IjkwIiBoZWlnaHQ9IjkwIiByeD0iMjAiIGZpbGw9IiM3YzVjZmYiLz4KICAgIDxyZWN0IHg9IjM3NSIgeT0iMjQwIiB3aWR0aD0iOTAiIGhlaWdodD0iOTAiIHJ4PSIyMCIgZmlsbD0iIzAwZDRmZiIvPgogICAgPHJlY3QgeD0iNDgwIiB5PSIyNDAiIHdpZHRoPSI5MCIgaGVpZ2h0PSI5MCIgcng9IjIwIiBmaWxsPSIjMmIyMTQwIi8+CiAgPC9nPgogIDxnIGZvbnQtZmFtaWx5PSJTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiM4YTdmOWMiIHRleHQtYW5jaG9yPSJtaWRkbGUiPgogICAgPHRleHQgeD0iMTA1IiB5PSIzNTUiPiNGRjVDQTg8L3RleHQ+CiAgICA8dGV4dCB4PSIyMTAiIHk9IjM1NSI+I0ZGQjkzODwvdGV4dD4KICAgIDx0ZXh0IHg9IjMxNSIgeT0iMzU1Ij4jN0M1Q0ZGPC90ZXh0PgogICAgPHRleHQgeD0iNDIwIiB5PSIzNTUiPiMwMEQ0RkY8L3RleHQ+CiAgICA8dGV4dCB4PSI1MjUiIHk9IjM1NSI+IzJCMjE0MDwvdGV4dD4KICA8L2c+CiAgPCEtLSB0eXBlIHNhbXBsZSAtLT4KICA8dGV4dCB4PSI0NzAiIHk9IjIxMCIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsIHNlcmlmIiBmb250LXNpemU9IjY0IiBmaWxsPSIjMmIyMTQwIj5BYTwvdGV4dD4KPC9zdmc+Cg==" alt="Brand kit with colour swatches and logo shapes" loading="lazy">
-          </div>
-          <div class="card-body">
-            <h3>Brand Kit</h3>
-            <p>A visual identity system: logo, colour palette and type scale for a startup.</p>
-            <div class="tags"><span>Design</span><span>Figma</span><span>Branding</span></div>
-          </div>
-        </article>
+        <div class="about-content">
+            <h3>Frontend Developer</h3>
 
-        <article class="card reveal" id="project-shop">
-          <div class="card-img">
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNDAwIiB3aWR0aD0iNjQwIiBoZWlnaHQ9IjQwMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9Imhlcm8iIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIwIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjN2M1Y2ZmIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAwZDRmZiIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjY0MCIgaGVpZ2h0PSI0MDAiIGZpbGw9IiNlZWYwZmYiLz4KICA8IS0tIHRvcCBiYXIgLS0+CiAgPHJlY3Qgd2lkdGg9IjY0MCIgaGVpZ2h0PSI1MiIgZmlsbD0iI2ZmZmZmZiIvPgogIDxyZWN0IHg9IjI0IiB5PSIxOCIgd2lkdGg9IjcwIiBoZWlnaHQ9IjE2IiByeD0iOCIgZmlsbD0iIzdjNWNmZiIvPgogIDxnIGZpbGw9IiNjOWNkZjIiPgogICAgPHJlY3QgeD0iMzYwIiB5PSIyMCIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjEyIiByeD0iNiIvPgogICAgPHJlY3QgeD0iNDIwIiB5PSIyMCIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjEyIiByeD0iNiIvPgogICAgPHJlY3QgeD0iNDgwIiB5PSIyMCIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjEyIiByeD0iNiIvPgogIDwvZz4KICA8Y2lyY2xlIGN4PSI1ODAiIGN5PSIyNiIgcj0iMTMiIGZpbGw9IiNmZjVjYTgiLz4KICA8dGV4dCB4PSI1ODAiIHk9IjMxIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iU2Vnb2UgVUksIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjZmZmIj4zPC90ZXh0PgogIDwhLS0gYmFubmVyIC0tPgogIDxyZWN0IHg9IjI0IiB5PSI2OCIgd2lkdGg9IjU5MiIgaGVpZ2h0PSI5MCIgcng9IjE2IiBmaWxsPSJ1cmwoI2hlcm8pIi8+CiAgPHRleHQgeD0iNDgiIHk9IjEwOCIgZm9udC1mYW1pbHk9IlNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNiIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2ZmZiI+QXV0dW1uIFNhbGU8L3RleHQ+CiAgPHRleHQgeD0iNDgiIHk9IjEzNiIgZm9udC1mYW1pbHk9IlNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjkiPlVwIHRvIDQwJSBvZmYgc2VsZWN0ZWQgaXRlbXM8L3RleHQ+CiAgPHJlY3QgeD0iNDkwIiB5PSI5NiIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIzNCIgcng9IjE3IiBmaWxsPSIjZmZmIi8+CiAgPHRleHQgeD0iNTQwIiB5PSIxMTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJTZWdvZSBVSSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiM3YzVjZmYiPlNob3Agbm93PC90ZXh0PgogIDwhLS0gcHJvZHVjdCBjYXJkcyAtLT4KICA8Zz4KICAgIDxyZWN0IHg9IjI0IiAgeT0iMTc4IiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjIwMCIgcng9IjE0IiBmaWxsPSIjZmZmIi8+CiAgICA8cmVjdCB4PSIxODQiIHk9IjE3OCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyMDAiIHJ4PSIxNCIgZmlsbD0iI2ZmZiIvPgogICAgPHJlY3QgeD0iMzQ0IiB5PSIxNzgiIHdpZHRoPSIxNDAiIGhlaWdodD0iMjAwIiByeD0iMTQiIGZpbGw9IiNmZmYiLz4KICAgIDxyZWN0IHg9IjUwNCIgeT0iMTc4IiB3aWR0aD0iMTEyIiBoZWlnaHQ9IjIwMCIgcng9IjE0IiBmaWxsPSIjZmZmIi8+CiAgPC9nPgogIDwhLS0gcHJvZHVjdCBpbWFnZXMgLS0+CiAgPHJlY3QgeD0iMzYiICB5PSIxOTAiIHdpZHRoPSIxMTYiIGhlaWdodD0iMTEwIiByeD0iMTAiIGZpbGw9IiNmZmQ4ZTgiLz4KICA8cmVjdCB4PSIxOTYiIHk9IjE5MCIgd2lkdGg9IjExNiIgaGVpZ2h0PSIxMTAiIHJ4PSIxMCIgZmlsbD0iI2Q5ZjNmZiIvPgogIDxyZWN0IHg9IjM1NiIgeT0iMTkwIiB3aWR0aD0iMTE2IiBoZWlnaHQ9IjExMCIgcng9IjEwIiBmaWxsPSIjZmZmMWM5Ii8+CiAgPHJlY3QgeD0iNTE2IiB5PSIxOTAiIHdpZHRoPSI4OCIgIGhlaWdodD0iMTEwIiByeD0iMTAiIGZpbGw9IiNlNGRjZmYiLz4KICA8IS0tIHByb2R1Y3QgaWNvbnMgLS0+CiAgPGNpcmNsZSBjeD0iOTQiIGN5PSIyNDUiIHI9IjMwIiBmaWxsPSIjZmY1Y2E4Ii8+CiAgPHJlY3QgeD0iMjM2IiB5PSIyMTUiIHdpZHRoPSIzNiIgaGVpZ2h0PSI2MCIgcng9IjEwIiBmaWxsPSIjMDBhNmQ2Ii8+CiAgPHBhdGggZD0iTTQxNCAyMTUgTDQ0NCAyNzUgTDM4NCAyNzUgWiIgZmlsbD0iI2ZmYjkzOCIvPgogIDxyZWN0IHg9IjU0MCIgeT0iMjI1IiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHJ4PSI4IiBmaWxsPSIjN2M1Y2ZmIiB0cmFuc2Zvcm09InJvdGF0ZSgxMiA1NjAgMjQ1KSIvPgogIDwhLS0gbGFiZWxzICsgcHJpY2VzIC0tPgogIDxnIGZpbGw9IiNjOWNkZjIiPgogICAgPHJlY3QgeD0iMzYiICB5PSIzMTIiIHdpZHRoPSI4MCIgaGVpZ2h0PSIxMCIgcng9IjUiLz4KICAgIDxyZWN0IHg9IjE5NiIgeT0iMzEyIiB3aWR0aD0iODAiIGhlaWdodD0iMTAiIHJ4PSI1Ii8+CiAgICA8cmVjdCB4PSIzNTYiIHk9IjMxMiIgd2lkdGg9IjgwIiBoZWlnaHQ9IjEwIiByeD0iNSIvPgogICAgPHJlY3QgeD0iNTE2IiB5PSIzMTIiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxMCIgcng9IjUiLz4KICA8L2c+CiAgPGcgZm9udC1mYW1pbHk9IlNlZ29lIFVJLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNyIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzJiMjE0MCI+CiAgICA8dGV4dCB4PSIzNiIgIHk9IjM1MiI+JDI5PC90ZXh0PgogICAgPHRleHQgeD0iMTk2IiB5PSIzNTIiPiQ0NTwvdGV4dD4KICAgIDx0ZXh0IHg9IjM1NiIgeT0iMzUyIj4kMTk8L3RleHQ+CiAgICA8dGV4dCB4PSI1MTYiIHk9IjM1MiI+JDYyPC90ZXh0PgogIDwvZz4KPC9zdmc+Cg==" alt="Online shop product grid" loading="lazy">
-          </div>
-          <div class="card-body">
-            <h3>Online Shop</h3>
-            <p>A responsive storefront with a product grid, hover effects and a smooth checkout flow.</p>
-            <div class="tags"><span>Responsive</span><span>Layout</span><span>CSS Grid</span></div>
-          </div>
-        </article>
+            <p>
+                My name is Alex. I am passionate about
+                web development, design and technology.
+                I enjoy creating beautiful and responsive
+                websites using HTML and CSS.
 
-      </div>
+                My goal is to improve my skills and create
+                amazing digital experiences.
+            </p>
+
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+
     </section>
 
-    <!-- ===== SKILLS ===== -->
-    <section id="skills" class="section">
-      <h2 class="section-title reveal">Skills</h2>
-      <div class="skills reveal">
-        <div class="skill"><div class="skill-head"><span>HTML5</span><span>95%</span></div><div class="bar"><span style="--w:95%"></span></div></div>
-        <div class="skill"><div class="skill-head"><span>CSS3 &amp; Animations</span><span>90%</span></div><div class="bar"><span style="--w:90%"></span></div></div>
-        <div class="skill"><div class="skill-head"><span>Responsive Layouts</span><span>85%</span></div><div class="bar"><span style="--w:85%"></span></div></div>
-      </div>
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+
+        <h2 class="heading">My <span>Skills</span></h2>
+
+        <div class="skills-container">
+
+            <div class="skill-box">
+                <h3>HTML <span>90%</span></h3>
+                <p>Website structure and content.</p>
+
+                <div class="progress">
+                    <div class="html"></div>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <h3>CSS <span>85%</span></h3>
+                <p>Design, colors and animations.</p>
+
+                <div class="progress">
+                    <div class="css"></div>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <h3>Web Design <span>75%</span></h3>
+                <p>Creative and modern layouts.</p>
+
+                <div class="progress">
+                    <div class="design"></div>
+                </div>
+            </div>
+
+        </div>
+
     </section>
 
-    <!-- ===== CONTACT ===== -->
-    <section id="contact" class="section">
-      <h2 class="section-title reveal">Let's work together</h2>
-      <form class="contact-form reveal" action="mailto:hello@example.com" method="post" enctype="text/plain">
-        <label>Name<input type="text" name="name" placeholder="Your name" required></label>
-        <label>Email<input type="email" name="email" placeholder="you@example.com" required></label>
-        <label>Message<textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea></label>
-        <button type="submit" class="btn btn-primary">Send message</button>
-      </form>
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+
+        <h2 class="heading">My <span>Projects</span></h2>
+
+        <div class="projects-container">
+
+            <div class="project-box">
+                <div class="project-icon">01</div>
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    A modern personal portfolio
+                    created with HTML and CSS.
+                </p>
+
+                <a href="#home">View Project →</a>
+            </div>
+
+            <div class="project-box">
+                <div class="project-icon">02</div>
+                <h3>Landing Page</h3>
+
+                <p>
+                    A clean and responsive
+                    landing page design.
+                </p>
+
+                <a href="#home">View Project →</a>
+            </div>
+
+            <div class="project-box">
+                <div class="project-icon">03</div>
+                <h3>Business Website</h3>
+
+                <p>
+                    A professional website
+                    for a modern business.
+                </p>
+
+                <a href="#home">View Project →</a>
+            </div>
+
+        </div>
+
     </section>
 
-  </main>
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
 
-  <footer class="footer">
-    <p>&copy; 2026 Alex Morgan. Built with HTML &amp; CSS.</p>
-  </footer>
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <div class="contact-content">
+
+            <h3>Let's Work Together!</h3>
+
+            <p>
+                Have a project or an idea?
+                Feel free to send me a message.
+                I would love to hear from you!
+            </p>
+
+            <a href="mailto:alex@email.com?subject=Portfolio%20Contact&body=Hello%20Alex,%0A%0AI%20would%20like%20to%20contact%20you.%0A%0AMessage:%0A%0ABest%20regards,"
+               class="btn">
+                Send Me an Email
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Copyright © 2026 Alex | All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
